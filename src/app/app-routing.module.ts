@@ -8,14 +8,6 @@ import { NotFound404Component } from './pages/not-found404/not-found404.componen
 import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
-  { path: '',
-    component: MainContainerComponent,
-    children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
-    ]
-  },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: '**', component: NotFound404Component },
