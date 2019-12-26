@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 
 /* Modulos */
 import { PagesModule } from './pages/pages.module';
+import { SettingsService } from './services/settings.service';
+
+/* Servicios */
+
 
 
 
@@ -18,7 +22,9 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    SettingsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

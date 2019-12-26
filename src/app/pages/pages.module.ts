@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 
 /* Modulos */
 import { SharedModule } from './../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 /* Rutas */
 import { PAGES_ROUTES } from './pages.routes';
@@ -15,6 +16,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { RegisterComponent } from './register/register.component';
 import { MainContainerComponent } from './main-container/main-container.component';
+import { AccountSetingsComponent } from './account-setings/account-setings.component';
 
 
 @NgModule({
@@ -24,12 +26,14 @@ import { MainContainerComponent } from './main-container/main-container.componen
     NotFound404Component,
     DashboardComponent,
     ProgressComponent,
-    RegisterComponent
+    RegisterComponent,
+    AccountSetingsComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    FormsModule
   ],
   exports: [
     MainContainerComponent,
